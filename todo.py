@@ -30,7 +30,7 @@ def addTodo():
     return redirect(url_for("index"))
 
 
-# todo tamamlama
+# todo tamamlama eklendi
 @app.route("/complete/<string:id>")
 def complete(id):
     todo = Todo.query.filter_by(id=id).first()
