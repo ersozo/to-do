@@ -46,7 +46,7 @@ def complete(id):
 
 
 
-# todo silme açıklamalar
+# todo silme açıklamalar eklendi
 @app.route("/delete/<string:id>")
 def delete(id):
     todo = Todo.query.filter_by(id=id).first()
