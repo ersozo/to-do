@@ -45,7 +45,8 @@ def complete(id):
     return redirect(url_for("index"))
 
 
-# todo silme
+
+# todo silme açıklamalar
 @app.route("/delete/<string:id>")
 def delete(id):
     todo = Todo.query.filter_by(id=id).first()
